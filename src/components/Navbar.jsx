@@ -24,6 +24,11 @@ function Navbar() {
               </a>
             </li>
             <li>
+              <a className="nav-link underline" href="#experience">
+                Experience
+              </a>
+            </li>
+            <li>
               <a className="nav-link underline" href="#contact-page">
                 Contact
               </a>
