@@ -1,38 +1,202 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+  font-family: 'Times New Roman', Times, serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body::-webkit-scrollbar {
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  background: linear-gradient(-45deg, #c9df8c, #8fe28f, #7086c5, #a66dc8);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+#welcome-section {
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.name {
+  font-family:  Brush Script MT, Brush Script Std, cursive;
+  font-weight: 500;
+  font-size: x-large;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.name:hover{
+  text-decoration: none;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 48.5px;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: rgba(35, 35, 35, 0.16); */
+  border-bottom: 2px solid;
+  /* background-color: rgba(211, 211, 211, 0.748); */
+}
+
+.nav-bar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  width: calc(100% - 34.49px);
+}
+
+.nav-bar > ul {
+  width: 400px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-bar > ul {
+      width: 50%;
   }
 }
+
+.nav-bar > #initials {
+  left: 0%;
+  display: flex;
+}
+
+.underline:hover {
+  text-decoration: underline;
+}
+
+a {
+  color: black;
+  background: var(--nav-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.section-header {
+  display: flex;
+  margin-bottom: 1em;
+  justify-content:center;
+  width: 100%;
+  padding: 3px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, max(320px, 100%/2)), 1fr));
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.project-tile {
+  position: relative;
+}
+
+.project-tile > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.project-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.centered {
+  position: absolute;
+  z-index: -1;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.project-img:hover {
+  animation:  fade-out .3s; 
+  opacity: .2;
+}
+
+
+.project-desc {
+  padding: 2rem 0.5rem;
+}
+
+@keyframes fade-out {
+  0% { opacity: 1; }
+  100% { opacity: .2; }
+}
+
+@keyframes enlarge {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.2); }
+}
+
+#contact-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+}
+
+.contact-grid {
+  display: grid;
+}
+
+.contact {
+  padding: 10px;
+}
+
+.fab {
+  font-family: "Font Awesome 5 Brands";
+  padding-right: 5px;
+}
+
+.fa-twitter:before {
+  content: "\f099";
+}
+
+.fa-github:before {
+  content: "\f09b";
+}
+
+.fa-linkedin:before {
+  content: "\f0e1";
+}
+
