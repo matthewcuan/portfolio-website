@@ -1,17 +1,35 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import tributePageImg from '../assets/images/tribute_page.jpg';
 import formDocImg from '../assets/images/form_doc.jpg';
 import techDocImg from '../assets/images/tech_doc.jpg';
 import productLandingImg from '../assets/images/product_landing.jpg';
 
 function Projects() {
+
+  const settings = {
+    className: "center",
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000, 
+    centerMode: true,
+    centerPadding: "30px",
+  };
+
   return (
     <section id="projects">
-      <div id="projects-wrapper">
+      <div id="projects-wrapper"> 
         <header className="section-header">
           <h1>These are some of my projects:</h1>
         </header>
-        <div className="project-grid">
+        <Slider {...settings}>
           <div className="project-tile">
             <a target="_blank" rel="noreferrer" href="https://www.google.com/">
               <h2 className="centered">Tribute Page</h2>
@@ -52,7 +70,7 @@ function Projects() {
               />
             </a>
           </div>
-        </div>
+        </Slider>
       </div>
     </section>
   );

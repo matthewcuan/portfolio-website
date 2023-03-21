@@ -2,7 +2,7 @@ import React from 'react'
 
 function Experience() {
   return (
-    <section className='experience'>
+    <section id="experience">
         This is where my experience will be
     </section>
   )
