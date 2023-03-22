@@ -3,7 +3,28 @@ import React from 'react'
 function Experience() {
   return (
     <section id="experience-section">
-        This is where my experience will be
+      <div className="column">
+        <h1>Column 1</h1>
+        <ul>
+          <li>
+            Lorem ipsum dolor sit amet, consectetur 
+          </li>
+          <li>Bullet 2</li>
+          <li>Bullet 3</li>
+          <li>Bullet 4</li>
+          <li>Bullet 5</li>
+        </ul>
+      </div>
+      <div className="column">
+        <h1>Column 2</h1>
+        <ul>
+          <li>Lorem ipsum dolor sit amet, consectetur</li>
+          <li>Bullet 2</li>
+          <li>Bullet 3</li>
+          <li>Bullet 4</li>
+          <li>Bullet 5</li>
+        </ul>
+      </div>
     </section>
   )
 }
