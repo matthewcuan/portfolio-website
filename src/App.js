@@ -1,21 +1,18 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { redirect, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css';
 import Navbar from './components/Navbar';
-import HomePage from './components/HomePage';
-import ProjectPage from './components/ProjectPage';
+import HomePage from './pages/HomePage';
+import ProjectPage from './pages/ProjectPage';
 
 function App() {
   return (
     <Router>
-      {/* <div className="App"> */}
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/project" element={<ProjectPage />} />
         </Routes>
-      {/* </div> */}
-
     </Router>
     
   );

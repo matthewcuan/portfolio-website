@@ -9,27 +9,27 @@ function Navbar() {
       </div>
       <nav id="navbar">
         <div className="nav-bar">
-          <a className="nav-link" href="#welcome-section">
+          <a className="nav-link" href="/#welcome-section">
             <b className="name">MC</b>
           </a>
           <ul className="section-links">
             <li>
-              <a className="nav-link underline" href="#about">
+              <a className="nav-link underline" href="/#about-section">
                 About
               </a>
             </li>
             <li>
-              <a className="nav-link underline" href="#projects">
+              <a className="nav-link underline" href="/#projects-section">
                 Projects
               </a>
             </li>
             <li>
-              <a className="nav-link underline" href="#experience">
+              <a className="nav-link underline" href="/#experience-section">
                 Experience
               </a>
             </li>
             <li>
-              <a className="nav-link underline" href="#contact-page">
+              <a className="nav-link underline" href="/#contact-section">
                 Contact
               </a>
             </li>

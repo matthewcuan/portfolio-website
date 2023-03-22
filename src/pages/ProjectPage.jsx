@@ -2,7 +2,9 @@ import React from 'react'
 
 function ProjectPage() {
   return (
-    <div>ProjectPage</div>
+    <div id="project1">
+      More details on a specific project
+    </div>
   )
 }
 

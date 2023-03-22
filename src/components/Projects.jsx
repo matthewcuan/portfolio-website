@@ -19,9 +19,9 @@ function Projects() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2700, 
-    centerPadding: "50px",
+    centerPadding: "20%",
     centerMode: true,
-
+    // variableWidth: true,
   };
 
   // TODO: 
@@ -34,14 +34,14 @@ function Projects() {
   // [X] move projects tab down
 
   return (
-    <section id="projects">
+    <section id="projects-section">
       <div id="projects-wrapper"> 
         <header className="section-header">
           <h1>These are some of my projects:</h1>
         </header>
         <Slider {...settings} id="slider">
           <div className="project-tile">
-            <a target="_blank" rel="noreferrer" href="https://www.google.com/">
+            <a target="_blank" rel="noreferrer" href="/project">
               <h2 className="centered">Tribute Page</h2>
               <img
                 className="project-img"
@@ -51,7 +51,7 @@ function Projects() {
             </a>
           </div>
           <div className="project-tile">
-            <a target="_blank" rel="noreferrer" href="">
+            <a target="_blank" rel="noreferrer" href="/project">
               <h2 className="centered">Survey Form</h2>
               <img
                 className="project-img"
@@ -61,7 +61,7 @@ function Projects() {
             </a>
           </div>
           <div className="project-tile">
-            <a target="_blank" rel="noreferrer" href="">
+            <a target="_blank" rel="noreferrer" href="/project">
               <h2 className="centered">Tech Doc</h2>
               <img
                 className="project-img"
@@ -71,7 +71,7 @@ function Projects() {
             </a>
           </div>
           <div className="project-tile">
-            <a target="_blank" rel="noreferrer" href="yahoo.com">
+            <a target="_blank" rel="noreferrer" href="/project">
               <h2 className="centered">Product Landing</h2>
               <img
                 className="project-img"

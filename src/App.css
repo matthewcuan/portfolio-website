@@ -27,9 +27,16 @@ body {
   }
 }
 
-#about, #welcome-section, #projects, #experience, #contact-page {
+#about-section, #welcome-section, #projects-section, 
+#experience-section, #contact-section, #project1 {
   height: 100vh;
   width: 100vw;
+}
+
+#project1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #welcome-section {
@@ -38,7 +45,7 @@ body {
   align-items: center;
 }
 
-#about {
+#about-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,7 +123,7 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 600px;
+  max-width: 65%;
   padding: 20px;
 }
 
@@ -140,7 +147,7 @@ a {
   margin: 0 auto;
 }
 
-#projects {
+#projects-section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,7 +166,15 @@ a {
   width: 100%;
   height: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+.slick-slide:not(.slick-active) {
+  opacity: 65%;
+}
+
+.slick-slide {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .project-img {
@@ -195,13 +210,13 @@ a {
   100% { transform: scale(1.2); }
 }
 
-#experience {
+#experience-section {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#contact-page {
+#contact-section {
   display: flex;
   justify-content: center;
   align-items: center;
