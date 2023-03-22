@@ -18,10 +18,20 @@ function Projects() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000, 
+    autoplaySpeed: 2700, 
+    centerPadding: "50px",
     centerMode: true,
-    centerPadding: "30px",
+
   };
+
+  // TODO: 
+  // [X] highlight center (shadow)
+  // [ ] blur non center X
+  // [X] add padding 
+  // [X] make smaller
+  // [ ] color of arrows X
+  // [ ] center panels
+  // [X] move projects tab down
 
   return (
     <section id="projects">
@@ -29,7 +39,7 @@ function Projects() {
         <header className="section-header">
           <h1>These are some of my projects:</h1>
         </header>
-        <Slider {...settings}>
+        <Slider {...settings} id="slider">
           <div className="project-tile">
             <a target="_blank" rel="noreferrer" href="https://www.google.com/">
               <h2 className="centered">Tribute Page</h2>
@@ -41,7 +51,7 @@ function Projects() {
             </a>
           </div>
           <div className="project-tile">
-            <a className="project-tile" target="_blank" rel="noreferrer" href="">
+            <a target="_blank" rel="noreferrer" href="">
               <h2 className="centered">Survey Form</h2>
               <img
                 className="project-img"

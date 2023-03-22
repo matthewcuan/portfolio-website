@@ -14,7 +14,7 @@ function Navbar() {
           </a>
           <ul className="section-links">
             <li>
-              <a className="nav-link underline" href="#welcome-section">
+              <a className="nav-link underline" href="#about">
                 About
               </a>
             </li>
