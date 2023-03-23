@@ -125,7 +125,6 @@ nav {
 
 .dropdown-menu {
   display: none;
-
 }
 
 .dropdown-menu.show {
@@ -134,7 +133,9 @@ nav {
   flex-direction: column;
   overflow: visible;
   position: absolute;
-  top: calc(100% + 10px);
+  padding-top: 35px;
+  /* calc(100% + 30px); */
+  /* margin-top: 50px; */
 }
 
 .dropdown-item {
