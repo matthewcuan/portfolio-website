@@ -119,6 +119,28 @@ nav {
   margin: 0;
 }
 
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+
+}
+
+.dropdown-menu.show {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  position: absolute;
+  top: calc(100% + 10px);
+}
+
+.dropdown-item {
+  margin-bottom: 10px;
+}
+
 @media only screen and (max-width: 800px) {
   .nav-bar > ul {
       width: 50%;
