@@ -110,7 +110,7 @@ nav {
   width: calc(100% - 34.49px);
 }
 
-.nav-bar > ul {
+.nav-links {
   width: 500px;
   list-style-type: none;
   display: flex;
