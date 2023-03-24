@@ -3,7 +3,7 @@ import React from 'react'
 
 function About() {
   return (
-    <div id="about-section">
+    <section id="about-section">
       <motion.aside 
         initial={{ x: -200 }}
         whileInView={{ x: 0 }}
@@ -31,7 +31,7 @@ function About() {
         className="photo">
           <img src="https://cdn1.iconfinder.com/data/icons/conceptual-figures-3/48/bl_1627_stick_man_brush_bucket_painter_artist_social_media-512.png"></img>
       </motion.aside>
-    </div>
+    </section>
   )
 }
 
