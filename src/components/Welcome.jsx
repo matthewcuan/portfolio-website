@@ -6,16 +6,17 @@ function Welcome() {
     <section id="welcome-section">
       <div className="introduction">
         <motion.aside
+          className="introduction"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{
             duration: 2,
           }}
         >
-        <h1>My name is Matthew Cuan</h1>
-        <p>
-          <i>uc berkeley alum and software developer</i>
-        </p>
+          <h2>Hey there! My name is <h1  class="my-name-is">Matthew Cuan</h1></h2>
+          <p>
+            <i class="intro">uc berkeley alum and software developer</i>
+          </p>
         </motion.aside >
       </div>
     </section>

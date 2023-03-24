@@ -1,11 +1,11 @@
 import React from 'react'
 
-function ProjectPage() {
+function ProjectPage1() {
   return (
     <div id="project1">
-      More details on a specific project
+      More details on project 1
     </div>
   )
 }
 
-export default ProjectPage
+export default ProjectPage1

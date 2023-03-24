@@ -24,6 +24,7 @@ function Contact() {
             <i className="fab fa-linkedin"></i>
             LinkedIn
         </a>
+        <a target="_blank" href="mailto:cuanmatthewl@gmail.com">Click to Send an Email</a>
       </motion.aside>
     </section>
   );

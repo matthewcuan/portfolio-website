@@ -27,8 +27,8 @@ body {
   }
 }
 
-#about-section, #welcome-section, #projects-section, 
-#experience-section, #contact-section, #project1 {
+#welcome-section,  #project1, #contact-section,
+#about-section, #projects-section, #experience-section {
   height: 100vh;
   width: 100vw;
 }
@@ -43,6 +43,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.introduction > h2 {
+  font-size: 1rem;
+}
+
+.my-name-is {
+  font-size: 2rem;
+}
+
+.intro {
+  font-size: 1rem;
 }
 
 #about-section {
@@ -259,6 +271,12 @@ a {
 }
 
 #experience-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.experience-animation {
   display: flex;
   align-items: center;
   justify-content: space-evenly;

@@ -5,7 +5,7 @@ function Experience() {
   return (
     <section id="experience-section">
       <motion.aside 
-        initial={{ x: -400 }}
+        initial={{ x: -200 }}
         whileInView={{ x: 0 }}
         transition={{ duration: 0.5 }}
         className="column">
