@@ -1,12 +1,17 @@
 import { motion } from 'framer-motion'
-import React from 'react'
+import React, { useState } from 'react'
 
 function About() {
+
+  const [animationPlayed, setAnimationPlayed] = useState(false);
+
+
   return (
     <section id="about-section">
       <motion.aside 
         initial={{ x: -200 }}
         whileInView={{ x: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.5}}
         className="bio">
         <h2>
@@ -27,6 +32,7 @@ function About() {
       <motion.aside 
         initial={{ x: 200 }}
         whileInView={{ x: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.5}}
         className="photo">
           <img src="https://cdn1.iconfinder.com/data/icons/conceptual-figures-3/48/bl_1627_stick_man_brush_bucket_painter_artist_social_media-512.png"></img>

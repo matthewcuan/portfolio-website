@@ -9,9 +9,8 @@ function Welcome() {
           className="introduction"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{
-            duration: 2,
-          }}
+          viewport={{ once: true }}
+          transition={{ duration: 2 }}
         >
           <h2>Hey there! My name is <h1  class="my-name-is">Matthew Cuan</h1></h2>
           <p>

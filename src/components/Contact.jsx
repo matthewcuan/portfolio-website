@@ -5,10 +5,12 @@ function Contact() {
   return (
     <section id="contact-section">
       <motion.aside
-        initial={{ scale: 5, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1}}
-        transition={{ duration: 0.5 }}
-        className="contacts-wrapper">
+        className="contacts-wrapper"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 2 }}
+      >
       <header className="section-header">
           <h1>Let's connect!</h1>
         </header>

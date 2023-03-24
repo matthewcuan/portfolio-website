@@ -4,11 +4,7 @@ import React from 'react'
 function Experience() {
   return (
     <section id="experience-section">
-      <motion.aside 
-        initial={{ x: -200 }}
-        whileInView={{ x: 0 }}
-        transition={{ duration: 0.5 }}
-        className="column">
+      <div className='column'>
         <h1>Education</h1>
         <ul>
           <li>
@@ -19,12 +15,8 @@ function Experience() {
           <li>Bullet 4</li>
           <li>Bullet 5</li>
         </ul>
-      </motion.aside>
-      <motion.aside 
-        initial={{ x: -200 }}
-        whileInView={{ x: 0 }}
-        transition={{ duration: 0.5}}
-        className="column">
+      </div>
+      <div className="column">
         <h1>Experience</h1>
         <ul>
           <li>
@@ -35,7 +27,7 @@ function Experience() {
           <li>Bullet 4</li>
           <li>Bullet 5</li>
         </ul>
-      </motion.aside>
+      </div>
     </section>
   )
 }

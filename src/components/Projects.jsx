@@ -17,21 +17,9 @@ function Projects() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2700, 
     centerPadding: "20%",
     centerMode: true,
-    // variableWidth: true,
   };
-
-  // TODO: 
-  // [X] highlight center (shadow)
-  // [ ] blur non center X
-  // [X] add padding 
-  // [X] make smaller
-  // [ ] color of arrows X
-  // [ ] center panels
-  // [X] move projects tab down
 
   return (
     <section id="projects-section">
