@@ -7,6 +7,7 @@ import tributePageImg from '../assets/images/tribute_page.jpg';
 import formDocImg from '../assets/images/form_doc.jpg';
 import techDocImg from '../assets/images/tech_doc.jpg';
 import productLandingImg from '../assets/images/product_landing.jpg';
+import chess from "../assets/images/chess.png"
 
 function Projects() {
 
@@ -28,6 +29,16 @@ function Projects() {
           <h1>These are some of my projects:</h1>
         </header>
         <Slider {...settings} id="slider">
+          <div className="project-tile" >
+            <a target="_blank" rel="noreferrer" href="/project1">
+              <h2 className="centered">Chess with Friends</h2>
+              <img
+                className="project-img"
+                src={chess}
+                alt="Chess with Friends"
+              />
+            </a>
+          </div>
           <div className="project-tile">
             <a target="_blank" rel="noreferrer" href="/project">
               <h2 className="centered">Tribute Page</h2>

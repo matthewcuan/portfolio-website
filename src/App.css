@@ -219,6 +219,11 @@ a {
   /* box-shadow: 2px 2px 5px black; */
 }
 
+.slick-track {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .project-tile > a {
   display: flex;
   justify-content: center;
