@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 function Contact() {
   return (
@@ -11,22 +13,29 @@ function Contact() {
         viewport={{ once: true }}
         transition={{ duration: 2 }}
       >
-      <header className="section-header">
+        <header className="section-header">
           <h1>Let's connect!</h1>
         </header>
-        <a id="twitter" className="contact underline" target="_blank" rel="noreferrer" href="https://twitter.com/cuan_codes/">
+        <div className="social">
+          <a id="twitter" className="contact underline" target="_blank" rel="noreferrer" href="https://twitter.com/cuan_codes/">
             <i className="fab fa-twitter"></i>
             Twitter
-        </a>
-        <a id="github" className="contact underline" target="_blank" rel="noreferrer" href="https://github.com/matthewcuan/">
+          </a>
+          <a id="github" className="contact underline" target="_blank" rel="noreferrer" href="https://github.com/matthewcuan/">
             <i className="fab fa-github"></i>
             Github
-        </a>
-        <a id="linkedin" className="contact underline" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/matthew-cuan/">
+          </a>
+          <a id="linkedin" className="contact underline" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/matthew-cuan/">
             <i className="fab fa-linkedin"></i>
             LinkedIn
-        </a>
-        <a target="_blank" href="mailto:cuanmatthewl@gmail.com">Click to Send an Email</a>
+          </a>
+        </div>
+        <div className="contact underline">
+          <a className="underline" target="_blank" href="mailto:cuanmatthewl@gmail.com">
+            <FontAwesomeIcon className="fab" icon={faEnvelope} />
+            cuanmatthewl@gmail
+          </a>
+        </div>       
       </motion.aside>
     </section>
   );

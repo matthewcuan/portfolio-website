@@ -310,6 +310,13 @@ li {
   margin-top: 3px;
 }
 
+.contacts-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .contact-grid {
   display: grid;
 }
