@@ -144,7 +144,7 @@ nav {
 }
 
 .dropdown-menu.show {
-  width: 100px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   overflow: visible;
