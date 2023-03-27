@@ -33,6 +33,15 @@ body {
   width: 100vw;
 }
 
+.contact-bar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
 #project1 {
   display: flex;
   justify-content: center;
