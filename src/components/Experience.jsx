@@ -7,25 +7,43 @@ function Experience() {
       <div className='column'>
         <h1>Education</h1>
         <ul>
+          <li><b>
+            University of California, Berkeley Graduated May 2022
+          </b></li>
           <li>
-            Lorem ipsum dolor sit amet, consectetur 
+            Relevant Classes:
           </li>
-          <li>Bullet 2</li>
-          <li>Bullet 3</li>
-          <li>Bullet 4</li>
-          <li>Bullet 5</li>
+          <li><i>
+            Computational Structures in Data Science (CS88)
+          </i></li>
+          <li><i>
+            Data Structures and Programming Methodology (CS61BL)
+          </i></li>
+          <li><i>
+            Introduction to Software Engineering (CS169A)
+          </i></li>
         </ul>
       </div>
       <div className="column">
-        <h1>Experience</h1>
+        <h1>Work Experience</h1>
         <ul>
           <li>
-            Lorem ipsum dolor sit amet, consectetur 
+            Roy Cloud School
           </li>
-          <li>Bullet 2</li>
-          <li>Bullet 3</li>
-          <li>Bullet 4</li>
-          <li>Bullet 5</li>
+          <li>
+            • Spearheaded and taught innovative middle school SEL 
+            elective centered around kindness and leadership
+          </li>
+          <li>
+            •	Developed lessons twice a week teaching communication, 
+            collaboration, and self-management 
+          </li>
+          <li>
+            •	Managed student-led kindness campaign involving local 
+            high schools, elementary schools, parents, teachers, school 
+            staff, international organizations, and professional 
+            speakers and authors  
+          </li>
         </ul>
       </div>
     </section>

@@ -8,8 +8,8 @@ function Contact() {
     <section id="contact-section">
       <motion.aside
         className="contacts-wrapper"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 2 }}
       >

@@ -1,15 +1,13 @@
 import { motion } from 'framer-motion'
 import React, { useState } from 'react'
+import Subject from '../assets/images/Subject.png';
 
 function About() {
-
-  const [animationPlayed, setAnimationPlayed] = useState(false);
-
 
   return (
     <section id="about-section">
       <motion.aside 
-        initial={{ x: -200 }}
+        initial={{ x: -100 }}
         whileInView={{ x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5}}
@@ -19,14 +17,23 @@ function About() {
         </h2>
         <br></br>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore 
-          magna aliqua. Varius quam quisque id diam vel quam 
-          elementum pulvinar. Tristique sollicitudin nibh sit amet 
-          commodo nulla facilisi. Nisl suscipit adipiscing bibendum 
-          est ultricies integer quis auctor. Eu facilisis sed odio 
-          morbi quis commodo. Nisi scelerisque eu ultrices vitae 
-          auctor. Facilisis magna etiam tempor orci.
+        As a highly motivated software engineer, I have 
+        a passion for identifying complex issues and 
+        building systems that solve them. After initially 
+        pursuing a career in medicine and public health, 
+        I was drawn to the creative and collaborative nature 
+        of computer science, and made the decision to 
+        </p>
+        <br></br>
+        <p>
+        transition my career. Today, my interests lie in 
+        designing efficient and scalable system architecture. 
+        Looking to the future, I aspire to work on high-impact 
+        technologies that make a meaningful difference in the 
+        world. With a strong foundation in both public health 
+        and computer science, I am well-equipped to approach 
+        software engineering challenges with a unique perspective 
+        and a dedication to excellence.
         </p>
       </motion.aside>
       <motion.aside 
@@ -35,7 +42,7 @@ function About() {
         viewport={{ once: true }}
         transition={{ duration: 0.5}}
         className="photo">
-          <img src="https://cdn1.iconfinder.com/data/icons/conceptual-figures-3/48/bl_1627_stick_man_brush_bucket_painter_artist_social_media-512.png"></img>
+          <img src={Subject}></img>
       </motion.aside>
     </section>
   )
