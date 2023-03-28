@@ -7,10 +7,10 @@ function Welcome() {
       <div className="introduction">
         <motion.aside
           className="introduction"
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 2 }}
+          transition={{ duration: 1.2 }}
         >
           <h2>Hey there! My name is <h1  class="my-name-is">Matthew Cuan</h1></h2>
           <p>

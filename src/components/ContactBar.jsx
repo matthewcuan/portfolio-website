@@ -7,10 +7,10 @@ function ContactBar() {
   return (
     <div>
       <motion.aside 
-        initial={{ x: -100, opacity: 0 }}
+        initial={{ x: -30, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 2}}
+        transition={{ duration: 1.2}}
         className="contact-bar">
         <a id="twitter" className="contact underline" target="_blank" rel="noreferrer" href="https://twitter.com/cuan_codes/">
           <i className="fab fa-twitter"></i>
