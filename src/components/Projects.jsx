@@ -3,11 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import tributePageImg from '../assets/images/tribute_page.jpg';
-import formDocImg from '../assets/images/form_doc.jpg';
-import techDocImg from '../assets/images/tech_doc.jpg';
-import productLandingImg from '../assets/images/product_landing.jpg';
-import chess from "../assets/images/chess.png"
+import chess from "../assets/images/chess.png";
+import fccProjects from "../assets/images/web_design.png";
+import lunarPandemic from "../assets/images/lunar_pandemic.png"
 
 function Projects() {
 
@@ -30,7 +28,7 @@ function Projects() {
         </header>
         <Slider {...settings} id="slider">
           <div className="project-tile" >
-            <a target="_blank" rel="noreferrer" href="/project1">
+            <a target="_blank" rel="noreferrer" href="/projects/chess">
               <h2 className="centered">Chess with Friends</h2>
               <img
                 className="project-img"
@@ -39,43 +37,23 @@ function Projects() {
               />
             </a>
           </div>
-          <div className="project-tile">
-            <a target="_blank" rel="noreferrer" href="/project">
-              <h2 className="centered">Tribute Page</h2>
+          <div className="project-tile" >
+            <a target="_blank" rel="noreferrer" href="/projects/web-design">
+              <h2 className="centered">Web Design Projects</h2>
               <img
                 className="project-img"
-                src={tributePageImg}
-                alt="Tribute Page"
+                src={fccProjects}
+                alt="Web Design Projects"
               />
             </a>
           </div>
-          <div className="project-tile">
-            <a target="_blank" rel="noreferrer" href="/project">
-              <h2 className="centered">Survey Form</h2>
+          <div className="project-tile" >
+            <a target="_blank" rel="noreferrer" href="/projects/lunar-pandemic">
+              <h2 className="centered">Lunar Pandemic 2061</h2>
               <img
                 className="project-img"
-                src={formDocImg}
-                alt="Survey Form"
-              />
-            </a>
-          </div>
-          <div className="project-tile">
-            <a target="_blank" rel="noreferrer" href="/project">
-              <h2 className="centered">Tech Doc</h2>
-              <img
-                className="project-img"
-                src={techDocImg}
-                alt="Tech Doc"
-              />
-            </a>
-          </div>
-          <div className="project-tile">
-            <a target="_blank" rel="noreferrer" href="/project">
-              <h2 className="centered">Product Landing</h2>
-              <img
-                className="project-img"
-                src={productLandingImg}
-                alt="Product Landing"
+                src={lunarPandemic}
+                alt="Lunar Pandemic 2061"
               />
             </a>
           </div>
