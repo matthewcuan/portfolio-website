@@ -27,8 +27,8 @@ body {
   }
 }
 
-#welcome-section,  #project1, #contact-section,
-#about-section, #projects-section, #experience-section {
+#welcome-section, #contact-section, #about-section, 
+#projects-section, #experience-section, #project-landing {
   height: 100vh;
   width: 100vw;
 }
@@ -40,12 +40,6 @@ body {
   display: flex;
   flex-direction: row;
   margin: 20px;
-}
-
-#project1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #welcome-section {
@@ -286,6 +280,77 @@ a {
   100% { transform: scale(1.2); }
 }
 
+#project-landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project-header {
+  position: absolute;
+  top: 10%;
+}
+
+.project-info {
+  width: 80%;
+  height: 70%;
+  position: absolute;
+  top: 20%;
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.project-visuals, .project-description {
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  border: dashed 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-visuals {
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-description {
+  right: 0;
+}
+
+.tech-description, .word-description, 
+.project-process {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.tech-description {
+  height: 20%;
+  top: 0;
+  border: dotted 1px red;
+}
+
+.word-description {
+  height: 80%;
+  bottom: 0;
+  border: dotted 1px blue;
+}
+
+.project-process {
+  height: 10%;
+  bottom: 0;
+}
+
 #experience-section {
   display: flex;
   align-items: center;
@@ -357,4 +422,6 @@ li {
 .fa-linkedin:before {
   content: "\f0e1";
 }
+
+
 

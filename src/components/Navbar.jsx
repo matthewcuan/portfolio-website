@@ -33,9 +33,9 @@ function Navigation() {
                 onMouseLeave={hideDropdown}
                 onClick={() => { window.location.href = '/#projects-section' }}
               >
-                <NavDropdown.Item className="underline" href="/chess">Chess with Friends</NavDropdown.Item>
-                <NavDropdown.Item className="underline" href="/project2">Web Design Projects</NavDropdown.Item>
-                <NavDropdown.Item className="underline" href="/project3">Lunar Pandemic 2061</NavDropdown.Item>
+                <NavDropdown.Item className="underline" href="/projects/chess">Chess with Friends</NavDropdown.Item>
+                <NavDropdown.Item className="underline" href="/projects/web-design">Web Design Projects</NavDropdown.Item>
+                <NavDropdown.Item className="underline" href="/projects/lunar-pandemic">Lunar Pandemic 2061</NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="/#experience-section" className="nav-link underline">
                   Experience
