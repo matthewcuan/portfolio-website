@@ -1,7 +1,6 @@
 import { redirect, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css';
-import Navigation from './components/Navbar';
 import HomePage from './pages/HomePage';
 import ChessPage from './pages/ChessPage';
 import WebDesign from './pages/WebDesignPage';
@@ -11,7 +10,6 @@ import ContactBar from './components/ContactBar';
 function App() {
   return (
     <Router>
-        <Navigation />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/projects/chess" element={<ChessPage />} />
