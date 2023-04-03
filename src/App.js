@@ -6,10 +6,12 @@ import ChessPage from './pages/ChessPage';
 import WebDesign from './pages/WebDesignPage';
 import LunarPandemic from './pages/LunarPandemicPage';
 import ContactBar from './components/ContactBar';
+import Navbar from './components/Navbar'
 
 function App() {
   return (
     <Router>
+        <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/projects/chess" element={<ChessPage />} />

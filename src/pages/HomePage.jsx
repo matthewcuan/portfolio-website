@@ -4,7 +4,6 @@ import Projects from '../components/Projects';
 import Contact from '../components/Contact'; 
 import Experience from '../components/Experience';
 import About from '../components/About';
-import Navigation from '../components/Navbar';
 
 function HomePage() {
 
@@ -20,7 +19,6 @@ function HomePage() {
       <Projects />
       <Experience />
       <Contact />
-      <Navigation />
     </div>
   )
 }
