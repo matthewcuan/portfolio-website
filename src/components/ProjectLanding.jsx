@@ -16,11 +16,17 @@ function ProjectLanding({ title, link, pictures, tech, words }) {
         </div>
         <div className="project-info">
           <div className="project-visuals">
-            {pictures}
+            <img className="picture" src={pictures} />
           </div>
           <div className="project-description">
-            <div className="tech-description">{tech}</div>
-            <div className="word-description">{words}</div>
+            <div className="word-description">
+              <h2>Description: </h2>
+              {words}
+            </div>
+            <div className="tech-description">
+              <h2>Technologies: </h2>
+              {tech}
+            </div>
           </div>
         </div>
         <div className="project-process">
