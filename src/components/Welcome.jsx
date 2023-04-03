@@ -12,9 +12,9 @@ function Welcome() {
           viewport={{ once: true }}
           transition={{ duration: 1.2 }}
         >
-          <h2>Hey there! My name is <h1  class="my-name-is">Matthew Cuan</h1></h2>
+          <h2>Hey there! My name is <div className="my-name-is">Matthew Cuan</div></h2>
           <p>
-            <i class="intro">uc berkeley alum and software developer</i>
+            <i className="intro">uc berkeley alum and software developer</i>
           </p>
         </motion.aside >
       </div>
