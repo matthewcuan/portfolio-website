@@ -301,8 +301,7 @@ a {
   height: 70%;
   position: absolute;
   top: 20%;
-  border-style: solid;
-  border-width: 1px;
+  border: solid 1px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -325,6 +324,10 @@ a {
   justify-content: center;
 }
 
+.picture {
+  width: 100%;
+}
+
 .project-description {
   right: 0;
 }
@@ -338,16 +341,23 @@ a {
   position: absolute;
 }
 
+.word-description {
+  height: 80%;
+  top: 0;
+  border: dotted 1px blue;
+}
+
 .tech-description {
   height: 20%;
-  top: 0;
+  bottom: 0;
+  justify-content: flex-start;
   border: dotted 1px red;
 }
 
-.word-description {
-  height: 80%;
-  bottom: 0;
-  border: dotted 1px blue;
+.project-description h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .project-process {

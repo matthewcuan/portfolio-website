@@ -2,18 +2,20 @@ import React from 'react';
 
 import ProjectLanding from '../components/ProjectLanding';
 import ProjectProcess from '../components/ProjectProcess';
-import Navbar from "../components/Navbar"
-import ProjectNav from '../components/ProjectNav';
+
+import ChessHome from '../assets/images/chess-home.png'
 
 function ChessPage() {
   return (
     <div className="project-page">
-      <Navbar />
       <ProjectLanding
         title="Chess with Friends"
+        linkTitle="Website"
         link="https://melodious-speculoos-b36439.netlify.app/"
-        pictures="Pictures"
-        tech="Tech"
+        pictures={ChessHome}
+        tech={
+          <p>Javascript, Mongo, React, Node, WebSocket, HTML, CSS</p>
+        }
         words="Words"
       />
       <ProjectProcess />

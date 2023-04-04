@@ -1,26 +1,42 @@
-import React from 'react'
+import React from 'react';
 
-function ProjectLanding({ title, link, pictures, tech, words }) {
+import { motion } from 'framer-motion';
+
+function ProjectLanding({ title, linkTitle, link, pictures, tech, words }) {
   return (
     <div id='project-landing'>
-        <div className="project-header">
+        <motion.aside 
+          className="project-header"
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2 }}
+        >
           <h1 className="project-name">
             {title}
           </h1>
-          <a className="project-link" 
+          <a 
+            className="project-link underline" 
             href={link}
-            target="_blank" rel="noreferrer"
+            target="_blank" 
+            rel="noreferrer"
           >
-            Link to Website
+            Link to {linkTitle}
           </a>
-        </div>
+        </motion.aside>
         <div className="project-info">
           <div className="project-visuals">
-            {pictures}
+            <img className="picture" src={pictures} />
           </div>
           <div className="project-description">
-            <div className="tech-description">{tech}</div>
-            <div className="word-description">{words}</div>
+            <div className="word-description">
+              <h2>Description: </h2>
+              {words}
+            </div>
+            <div className="tech-description">
+              <h2>Technologies: </h2>
+              {tech}
+            </div>
           </div>
         </div>
         <div className="project-process">
