@@ -350,6 +350,7 @@ a {
 .tech-description {
   height: 20%;
   bottom: 0;
+  justify-content: flex-start;
   border: dotted 1px red;
 }
 

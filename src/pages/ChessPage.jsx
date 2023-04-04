@@ -10,6 +10,7 @@ function ChessPage() {
     <div className="project-page">
       <ProjectLanding
         title="Chess with Friends"
+        linkTitle="Website"
         link="https://melodious-speculoos-b36439.netlify.app/"
         pictures={ChessHome}
         tech={
