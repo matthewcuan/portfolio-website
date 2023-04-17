@@ -90,6 +90,7 @@ sections of each of the pages
 .photo > img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 .name {
@@ -315,6 +316,12 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.description-list > li {
+  display: list-item;
+  list-style: circle;
+  list-style-type: circle;
 }
 
 .project-visuals {

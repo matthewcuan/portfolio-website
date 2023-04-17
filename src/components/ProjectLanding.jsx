@@ -39,9 +39,9 @@ function ProjectLanding({ title, linkTitle, link, pictures, tech, words }) {
             </div>
           </div>
         </div>
-        <div className="project-process">
+        {/* <div className="project-process">
           &#8595; Scroll down to learn more &#8595;
-        </div>
+        </div> */}
     </div>
   )
 }
