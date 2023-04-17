@@ -32,7 +32,7 @@ sections of each of the pages
 */
 #welcome-section, #contact-section, #about-section, 
 #projects-section, #experience-section, #project-landing, 
-#project-process {
+#project-process, #project-pages {
   height: 100vh;
   width: 100vw;
 }
@@ -359,6 +359,17 @@ a {
   top: 0;
   left: 0;
 }
+
+#project-process, #project-pages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#project-pages {
+ flex-direction: row;
+}
+
 
 .project-process {
   height: 10%;

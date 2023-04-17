@@ -2,6 +2,7 @@ import React from 'react';
 
 import ProjectLanding from '../components/ProjectLanding';
 import ProjectProcess from '../components/ProjectProcess';
+import ProjectFeatures from '../components/ProjectFeatures';
 
 import ChessHome from '../assets/images/chess-home.png'
 
@@ -18,6 +19,7 @@ function ChessPage() {
         }
         words="Words"
       />
+      <ProjectFeatures />
       <ProjectProcess />
     </div>
   )
