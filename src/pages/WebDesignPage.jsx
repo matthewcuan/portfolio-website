@@ -12,7 +12,11 @@ function WebDesign() {
         link="https://www.freecodecamp.org/certification/matthew-cuan/responsive-web-design"
         pictures={fccProjects}
         tech="HTML, Cascading Style Sheets (CSS)"
-        words="Words"
+        words={
+          <ul className="description-list">
+            <li>Projects created while completing FreeCodeCamp's <i>Responsive Web Design Certificate</i></li>
+          </ul>
+        }
       />
     </div>
   )

@@ -13,7 +13,12 @@ function LunarPandemic() {
         link="https://www.youtube.com/watch?v=2oU4z1A3X08&ab_channel=MatthewCuan"
         pictures={lunarPandemic}
         tech="Java"
-        words="Words"
+        words={
+          <ul className="description-list">
+            <li>2D tile-based world exploration engine completed with pair programming</li>
+            <li>Implemented path-finding algorithms for zombie bots, procedural generation for world creation, and state persistence for game saves</li>
+          </ul>
+        }
       />
     </div>
   )
