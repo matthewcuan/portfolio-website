@@ -23,12 +23,21 @@ function Experience() {
             Introduction to Software Engineering (CS169A)
           </i></li>
         </ul>
+        <br></br>
+        <ul>
+          <li><b>
+            FreeCodeCamp
+          </b></li>
+          <li>
+            Courses: Responsive Web Design Certificate
+          </li>
+        </ul>
       </div>
       <div className="column">
         <h1>Work Experience</h1>
         <ul>
           <li>
-            Roy Cloud School
+            <b>Roy Cloud School</b>
           </li>
           <li>
             • Spearheaded and taught innovative middle school SEL 
@@ -43,6 +52,28 @@ function Experience() {
             high schools, elementary schools, parents, teachers, school 
             staff, international organizations, and professional 
             speakers and authors  
+          </li>
+        </ul>
+        <br></br>
+        <ul>
+          <li>
+            <b>Tennis Instructor</b>
+          </li>
+          <li>
+            • Coached a diverse group of local kids and adults 
+            (ages 6 - 52) with multiple coaching sessions a week 
+          </li>
+          <li>
+            •	Coordinated lesson times with clients through 
+            a scheduling portal I independently created
+          </li>
+          <li>
+            •	Advertised and outreached on multiple platforms 
+            with my own flyer and designs  
+          </li>
+          <li>
+            •	Maintained a 100% repeat client rate with several 
+            students recommending their friends and family  
           </li>
         </ul>
       </div>
