@@ -292,6 +292,8 @@ a {
   flex-direction: column;
 }
 
+
+
 .project-header {
   position: absolute;
   top: 10%;
@@ -306,6 +308,20 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+  .project-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-visuals, .project-description {
+    width: 80%;
+    height: 50%;
+    position: relative;
+  }
 }
 
 .project-visuals, .project-description {
@@ -327,7 +343,7 @@ a {
 }
 
 .project-visuals {
-  left: 0;
+  /* left: 0; */
   display: flex;
   align-items: center;
   justify-content: center;
