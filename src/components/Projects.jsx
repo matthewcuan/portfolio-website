@@ -28,7 +28,7 @@ function Projects() {
         </header>
         <Slider {...settings} id="slider">
           <div className="project-tile" >
-            <a target="_blank" rel="noreferrer" href="/projects/chess">
+            <a rel="noreferrer" href="/projects/chess">
               <h2 className="centered">Chess with Friends</h2>
               <img
                 className="project-img"
@@ -38,7 +38,7 @@ function Projects() {
             </a>
           </div>
           <div className="project-tile" >
-            <a target="_blank" rel="noreferrer" href="/projects/web-design">
+            <a rel="noreferrer" href="/projects/web-design">
               <h2 className="centered">Web Design Projects</h2>
               <img
                 className="project-img"
@@ -48,7 +48,7 @@ function Projects() {
             </a>
           </div>
           <div className="project-tile" >
-            <a target="_blank" rel="noreferrer" href="/projects/lunar-pandemic">
+            <a rel="noreferrer" href="/projects/lunar-pandemic">
               <h2 className="centered">Lunar Pandemic 2061</h2>
               <img
                 className="project-img"
