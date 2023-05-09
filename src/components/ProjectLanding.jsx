@@ -26,7 +26,14 @@ function ProjectLanding({ title, linkTitle, link, pictures, tech, words }) {
         </motion.aside>
         <div className="project-info">
           <div className="project-visuals">
-            <img className="picture" src={pictures} />
+            <a 
+              className="project-link underline" 
+              href={link}
+              target="_blank" 
+              rel="noreferrer"
+            >
+              <img className="picture" src={pictures} />
+            </a>
           </div>
           <div className="project-description">
             <div className="word-description">
