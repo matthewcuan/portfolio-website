@@ -23,16 +23,17 @@ function About() {
         pursuing a career in medicine and public health, 
         I was drawn to the creative and collaborative nature 
         of computer science, and made the decision to 
+        transition my career.
         </p>
         <br></br>
         <p>
-        transition my career. Today, my interests lie in 
-        designing efficient and scalable system architecture. 
-        Looking to the future, I aspire to work on high-impact 
-        technologies that make a meaningful difference in the 
-        world. With a strong foundation in both public health 
-        and computer science, I am well-equipped to approach 
-        software engineering challenges with a unique perspective 
+        Today, my interests lie in designing efficient and 
+        scalable system architecture. Looking to the future, 
+        I aspire to work on high-impact technologies that 
+        make a meaningful difference in the world. With a 
+        strong foundation in both public health and computer 
+        science, I am well-equipped to approach software 
+        engineering challenges with a unique perspective 
         and a dedication to excellence.
         </p>
       </motion.aside>
