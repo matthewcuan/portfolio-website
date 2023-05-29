@@ -27,15 +27,17 @@ function About() {
         </p>
         <br></br>
         <p>
-        Today, my interests lie in designing efficient and 
-        scalable system architecture. Looking to the future, 
-        I aspire to work on high-impact technologies that 
-        make a meaningful difference in the world. With a 
-        strong foundation in both public health and computer 
-        science, I am well-equipped to approach software 
-        engineering challenges with a unique perspective 
-        and a dedication to excellence.
+          <b>Languages: </b>JavaScript, HTML, CSS, Java, 
+          Python, Node, Ruby on Rails, R
         </p>
+        <br></br>
+        <p>
+          <b>Hobbies:</b> tennis, chess, hiking, gymmming
+        </p>        
+        <br></br>
+        <p>
+          <b>Guilt Pleasure:</b> removing the lint from the dryer
+        </p>        
       </motion.aside>
       <motion.aside 
         initial={{ x: 200 }}
