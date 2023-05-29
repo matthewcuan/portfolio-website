@@ -32,11 +32,11 @@ function About() {
         </p>
         <br></br>
         <p>
-          <b>Hobbies:</b> tennis, chess, hiking, gymmming
+          <b>Hobbies:</b> tennis, chess, hiking, exercising
         </p>        
         <br></br>
         <p>
-          <b>Guilt Pleasure:</b> removing the lint from the dryer
+          <b>Guilty Pleasure:</b> removing the lint from the dryer
         </p>        
       </motion.aside>
       <motion.aside 
