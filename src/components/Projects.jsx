@@ -25,6 +25,7 @@ function Projects() {
       <div id="projects-wrapper"> 
         <header className="section-header">
           <h1>These are some of my projects:</h1>
+          <p class="small-text">(Click to learn more)</p>
         </header>
         <Slider {...settings} id="slider">
           <div className="project-tile" >

@@ -22,6 +22,9 @@ function Experience() {
           <li><i>
             Introduction to Software Engineering (CS169A)
           </i></li>
+          <li><i>
+            Introduction to Programming in R (STAT33A)
+          </i></li>
         </ul>
         <br></br>
         <ul>
