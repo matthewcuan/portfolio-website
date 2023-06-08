@@ -33,11 +33,7 @@ function About() {
         <br></br>
         <p>
           <b>Hobbies:</b> tennis, chess, hiking, exercising
-        </p>        
-        <br></br>
-        <p>
-          <b>Guilty Pleasure:</b> removing the lint from the dryer
-        </p>        
+        </p>               
       </motion.aside>
       <motion.aside 
         initial={{ x: 200 }}
