@@ -1,5 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import chess from "../assets/images/chess.png";
 import fccProjects from "../assets/images/web_design.png";
