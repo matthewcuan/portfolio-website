@@ -5,7 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 
 import chess from "../assets/images/chess.png";
 import fccProjects from "../assets/images/web_design.png";
-import lunarPandemic from "../assets/images/lunar_pandemic.png"
+import lunarPandemic from "../assets/images/lunar_pandemic.png";
+import chromeExtension from "../assets/images/extension.gif";
 
 function Projects() {
 
@@ -55,6 +56,16 @@ function Projects() {
                 className="project-img"
                 src={lunarPandemic}
                 alt="Lunar Pandemic 2061"
+              />
+            </a>
+          </div>
+          <div className="project-tile" >
+            <a rel="noreferrer" href="/projects/chrome-extension">
+              <h2 className="centered">ChatGPT Wiki Extension</h2>
+              <img
+                className="project-img"
+                src={chromeExtension}
+                alt="ChatGPT Wiki Extension"
               />
             </a>
           </div>

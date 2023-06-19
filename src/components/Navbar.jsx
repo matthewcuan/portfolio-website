@@ -53,6 +53,7 @@ function Navigation(aboutSection) {
                 <NavDropdown.Item className="underline" href="/projects/chess">Chess with Friends</NavDropdown.Item>
                 <NavDropdown.Item className="underline" href="/projects/web-design">Web Design Projects</NavDropdown.Item>
                 <NavDropdown.Item className="underline" href="/projects/lunar-pandemic">Lunar Pandemic 2061</NavDropdown.Item>
+                <NavDropdown.Item className="underline" href="/projects/chrome-extension">GPT Chrome Extension</NavDropdown.Item>
               </NavDropdown>
               <Nav.Link 
                 href="/#experience-section" 
