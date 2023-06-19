@@ -32,7 +32,7 @@ function ProjectLanding({ title, linkTitle, link, pictures, tech, words }) {
               target="_blank" 
               rel="noreferrer"
             >
-              <img className="picture" src={pictures} />
+              <img className="picture" src={pictures} alt="project pictures" />
             </a>
           </div>
           <div className="project-description">
@@ -46,9 +46,6 @@ function ProjectLanding({ title, linkTitle, link, pictures, tech, words }) {
             </div>
           </div>
         </div>
-        {/* <div className="project-process">
-          &#8595; Scroll down to learn more &#8595;
-        </div> */}
     </div>
   )
 }

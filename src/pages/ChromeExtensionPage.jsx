@@ -1,7 +1,6 @@
 import React from 'react';
 
 import ProjectLanding from '../components/ProjectLanding';
-
 import chromeExtension from "../assets/images/extension.gif";
 
 function ChromeExtensionPage() {

@@ -1,8 +1,8 @@
 import React from 'react';
 
 import ProjectLanding from '../components/ProjectLanding';
-import ProjectProcess from '../components/ProjectProcess';
-import ProjectFeatures from '../components/ProjectFeatures';
+// import ProjectProcess from '../components/ProjectProcess';
+// import ProjectFeatures from '../components/ProjectFeatures';
 
 import Chess from '../assets/images/chess.png'
 

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import Welcome from '../components/Welcome';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact'; 

@@ -21,7 +21,7 @@ function ContactBar() {
         <a id="linkedin" className="contact underline" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/matthew-cuan/">
           <i className="fab fa-linkedin"></i>
         </a>
-        <a className="contact underline" target="_blank" href="mailto:cuanmatthewl@gmail.com">
+        <a className="contact underline" target="_blank" rel="noreferrer" href="mailto:cuanmatthewl@gmail.com">
           <FontAwesomeIcon className="fab" icon={faEnvelope} />
         </a>
       </motion.aside>
