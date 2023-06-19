@@ -1,10 +1,10 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-function Navigation(aboutSection) {
+function Navigation() {
 
   const [show, setShow] = useState(false);
   const showDropdown = (e)=>{
@@ -13,19 +13,6 @@ function Navigation(aboutSection) {
   const hideDropdown = e => {
       setShow(false);
   }
-
-  // const aboutSection = useRef(null);
-  // const projectsSection = useRef(null);
-  // const experienceSection = useRef(null);
-  // const contactSection = useRef(null);
-
-  // const scrollDown = (ref) => {
-  //   ref.current.scrollIntoView({
-  //     behavior: 'smooth',
-  //     block: 'nearest',
-  //     inline: 'center'
-  //   });
-  // };
 
   return (
       <Navbar id="navbar">
@@ -37,7 +24,6 @@ function Navigation(aboutSection) {
               <Nav.Link 
                 href="/#about-section" 
                 className="nav-link underline"
-                // onClick={() => scrollDown(aboutSection)}
               >
                   About
               </Nav.Link>

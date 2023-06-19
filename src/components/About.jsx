@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import React, { useState } from 'react'
+import React from 'react'
 import Headshot from '../assets/images/headshot.png';
 
 function About() {
@@ -41,7 +41,7 @@ function About() {
         viewport={{ once: true }}
         transition={{ duration: 0.5}}
         className="photo">
-          <img src={Headshot}></img>
+          <img src={Headshot} alt="headshot"></img>
       </motion.aside>
     </section>
   )
