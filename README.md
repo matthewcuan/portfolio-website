@@ -1,4 +1,4 @@
-# Matthew Cuan's Portfolio Website
+# Portfolio Website
 
 [Link to live website](https://matthew-cuan.com/)
 
