@@ -1,4 +1,4 @@
-# CHESS WITH FRIENDS
+# Matthew Cuan's Portfolio Website
 
 [Link to live website](https://matthew-cuan.com/)
 
