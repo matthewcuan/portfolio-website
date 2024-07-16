@@ -39,43 +39,31 @@ function Experience() {
         <h1>Work Experience</h1>
         <ul>
           <li>
-            <b>Roy Cloud School</b>
+            <b>Software Engineer @ 90meter Inc</b>
           </li>
           <li>
-            • Spearheaded and taught innovative middle school SEL 
-            elective centered around kindness and leadership
+            • Revamp proprietary software for smart card authentication on non-domain connected computers
           </li>
           <li>
-            •	Developed lessons twice a week teaching communication, 
-            collaboration, and self-management 
+            • Develop non-person entity automatic certificate enrollment software over EST protocol
           </li>
           <li>
-            •	Managed student-led kindness campaign involving local 
-            high schools, elementary schools, parents, teachers, school 
-            staff, international organizations, and professional 
-            speakers and authors  
+            • Engineer a full stack web application for token and certificate issuing, tracking, and auditing
+          </li>
+          <li>
+            • Contribute to PKCS#11 API, automate QA testing, and integrate CI/CD throughout the dev department 
           </li>
         </ul>
         <br></br>
         <ul>
           <li>
-            <b>Tennis Instructor</b>
+            <b>Full Stack Engineer @ FUNetix</b>
           </li>
           <li>
-            • Coached a diverse group of local kids and adults 
-            (ages 6 - 52) with multiple coaching sessions a week 
+            • Build features for full stack educational literacy web game
           </li>
           <li>
-            •	Coordinated lesson times with clients through 
-            a scheduling portal I independently created
-          </li>
-          <li>
-            •	Advertised and outreached on multiple platforms 
-            with my own flyer and designs  
-          </li>
-          <li>
-            •	Maintained a 100% repeat client rate with several 
-            students recommending their friends and family  
+            • Promote literacy worldwide through fun, interactive words games
           </li>
         </ul>
       </div>
