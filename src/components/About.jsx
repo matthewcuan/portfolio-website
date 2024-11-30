@@ -27,12 +27,12 @@ function About() {
         </p>
         <br></br>
         <p>
-          <b>Languages: </b>JavaScript, HTML, CSS, Java, 
+          <b>Languages: </b>C#, JavaScript, HTML, CSS, Java, 
           Python, Node, Ruby on Rails, R
         </p>
         <br></br>
         <p>
-          <b>Hobbies:</b> tennis, chess, hiking, exercising
+          <b>Hobbies:</b> tennis, chess, hiking
         </p>               
       </motion.aside>
       <motion.aside 
