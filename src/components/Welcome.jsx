@@ -4,20 +4,28 @@ import { motion } from "framer-motion";
 function Welcome() {
   return (
     <section id="welcome-section">
-      <div className="introduction">
-        <motion.aside
-          className="introduction"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1.2 }}
-        >
-          <h2>Hey there! My name is <div className="my-name-is">Matthew Cuan</div></h2>
-          <p>
-            <i className="intro">uc berkeley alum and software developer</i>
-          </p>
-        </motion.aside >
-      </div>
+      <motion.aside
+        className="introduction"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+      >
+        <h2>
+          Hey there! My name is <span className="my-name-is">Matthew Cuan</span>
+        </h2>
+        <p>
+          <i className="intro">UC Berkeley alum and software developer</i>
+        </p>
+        <div className="intro-actions">
+          <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.98 }} href="/#projects-section" className="cta-button primary">
+            View Projects
+          </motion.a>
+          <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.98 }} href="/#contact-section" className="cta-button">
+            Contact Me
+          </motion.a>
+        </div>
+      </motion.aside>
     </section>
   );
 }
