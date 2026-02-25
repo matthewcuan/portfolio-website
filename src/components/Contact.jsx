@@ -31,9 +31,9 @@ function Contact() {
           </a>
         </div>
         <div className="contact underline">
-          <a className="underline" target="_blank" rel="noreferrer" href="mailto:cuanmatthewl@gmail.com">
+          <a className="underline" target="_blank" rel="noreferrer" href="mailto:matthewcuan@gmail.com">
             <FontAwesomeIcon className="fab" icon={faEnvelope} />
-            cuanmatthewl@gmail
+            matthewcuan@gmail.com
           </a>
         </div>       
       </motion.aside>
