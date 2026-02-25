@@ -27,8 +27,11 @@ function About() {
         </p>
         <br></br>
         <p>
-          <b>Languages: </b>C#, JavaScript, HTML, CSS, Java, 
-          Python, Node, Ruby on Rails, R
+          <b>Languages: </b>C#, C++, JavaScript, Python, HTML, CSS, SQL
+        </p>
+        <br></br>
+        <p>
+          <b>Skills: </b>.NET, Blazor, Entity Framework, WinForms, React, Jenkins, Git, AWS
         </p>
         <br></br>
         <p>
