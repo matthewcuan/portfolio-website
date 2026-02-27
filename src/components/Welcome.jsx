@@ -15,7 +15,7 @@ function Welcome() {
           Hey there! My name is <span className="my-name-is">Matthew Cuan</span>
         </h2>
         <p>
-          <i className="intro">UC Berkeley alum and software developer</i>
+          <i className="intro">UC Berkeley alum, software developer, and Georgia Tech OMSCS student</i>
         </p>
         <div className="intro-actions">
           <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.98 }} href="/#projects-section" className="cta-button primary">

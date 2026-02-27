@@ -19,10 +19,10 @@ const education = [
       "Introduction to Programming in R (STAT33A)",
     ],
   },
-  {
-    title: "freeCodeCamp",
-    details: ["Responsive Web Design Certificate"],
-  },
+  // {
+  //   title: "freeCodeCamp",
+  //   details: ["Responsive Web Design Certificate"],
+  // },
 ];
 
 const work = [
@@ -46,13 +46,13 @@ const work = [
       "Technologies: C#, .NET 9, Blazor, Entity Framework, Microsoft SQL Server",
     ],
   },
-  {
-    title: "Software Developer @ FUNetix (May 2023 - May 2024)",
-    details: [
-      "Built interactive features for a full-stack, responsive education literacy web app",
-      "Technologies: React, JavaScript, HTML, CSS, Git",
-    ],
-  },
+  // {
+  //   title: "Software Developer @ FUNetix (May 2023 - May 2024)",
+  //   details: [
+  //     "Built interactive features for a full-stack, responsive education literacy web app",
+  //     "Technologies: React, JavaScript, HTML, CSS, Git",
+  //   ],
+  // },
 ];
 
 function TimelineCard({ item, delay = 0 }) {

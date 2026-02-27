@@ -27,6 +27,10 @@ function About() {
         </p>
         <br></br>
         <p>
+          I'm currently in Georgia Tech's master's program in computer science.
+        </p>
+        <br></br>
+        <p>
           <b>Languages: </b>C#, C++, JavaScript, Python, HTML, CSS, SQL
         </p>
         <br></br>
