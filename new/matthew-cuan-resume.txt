@@ -1,0 +1,84 @@
+Matthew Cuan
+Education
+University of California, Berkeley Berkeley, California​
+​
+​
+​
+Graduated May 2022
+●​ Relevant Coursework: Computational Structures in Data Science (CS88), Data Structures and
+Programming Methodology (CS61BL), Introduction to Software Engineering (CS169A)
+Georgia Institute of Technology Atlanta, Georgia​
+​
+​
+Expected Graduation: 2027
+●​ Master of Science in Computer Science (OMSCS), specialization in Artificial Intelligence
+
+Skills, Certifications, & Clearances
+●​ Skills: Python, C#, JavaScript, SQL, AWS, AI tools (Codex, Claude Code, Github Copilot), Jenkins
+●​ Clearances: US Secret Security Clearance
+●​ Certifications: CompTIA Security+ (Plus) Certification
+
+Work Experience
+90meter Inc​ ​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+June 2023 - Present
+
+Lead Software Engineer, 2025 - Present
+
+●​ Lead development of security-critical Windows smart card middleware deployed to 1.5M+ endpoints in
+government environments
+●​ Led development of a first-of-its-kind PQC-compliant smart card applet, bridging emerging
+post-quantum algorithms with legacy PKI systems to enable forward-compatible, secure authentication
+●​ Manage team of 3 software engineers and interface with clients to deliver smart card solutions
+●​ Reduced authentication friction by eliminating redundant PIN prompts, improving user login success
+rates and reducing support overhead
+●​ Built CI/CD pipeline, minimizing human errors and decreasing time from development to test by 50%
+●​ Technologies: C#, C++, .NET Framework 4.8, WinForms, Jenkins, Remote Procedure Calls,
+AI-assisted development (Codex, Claude Code, Github Copilot)
+Software Engineer, 2023 - 2025
+
+●​ Built and maintained a full-stack web application for secure enterprise PKI operations platform covering
+100+ Python API endpoints across certificate, token, audit, inventory, and reporting workflows.
+●​ Developed backend integrations for SQL databases, LDAP/Active Directory, X.509 certificate parsing,
+role-based access control, and audit logging, supporting secure workflows for multi-step certificate and
+token lifecycle management.
+●​ Delivered an operator-facing web dashboard using JavaScript, Bootstrap, Tabulator, Chart.js, and PDF
+export tooling, with 20+ automated Python tests
+●​ Revamp proprietary software for smart card authentication on non-domain connected computers
+●​ Develop non-person entity automatic certificate enrollment software over EST protocol
+●​ Technologies: Python, JavaScript, SQL, LDAP/Active Directory, nginx, Linux
+
+Projects
+Machine Learning Trading Strategy Platform ​​
+​
+​
+​
+January 2026 - Present​
+●​ Built a Python-based trading analytics platform using pandas, NumPy, and ML models to process
+historical market data and simulate portfolio strategies
+●​ Designed modular pipelines for data ingestion, strategy evaluation, and portfolio backtesting
+●​ Implemented ML-driven trading strategies achieving up to 37.8% cumulative return vs. 1.2%
+benchmark in backtesting
+●​ Evaluated performance using Sharpe ratio, volatility, and return-based metrics to compare strategy
+effectiveness
+●​ Technologies: Python, Numpy, pandas, ML algorithms (Q-Learner, Decision Trees, KNN)
+
+
