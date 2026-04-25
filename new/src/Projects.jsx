@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 // Projects grid with modal deep-dives.
 
 const projStyles = {
@@ -221,7 +223,7 @@ const projStyles = {
 };
 
 function ProjectCard({ project, layout, onClick }) {
-  const [hover, setHover] = React.useState(false);
+  const [hover, setHover] = useState(false);
   return (
     <div
       data-mobile="proj-card"
@@ -268,7 +270,7 @@ function ProjectCard({ project, layout, onClick }) {
 }
 
 function ProjectModal({ project, onClose }) {
-  React.useEffect(() => {
+  useEffect(() => {
     const onKey = (e) => e.key === "Escape" && onClose();
     window.addEventListener("keydown", onKey);
     document.body.style.overflow = "hidden";
@@ -329,8 +331,8 @@ function ProjectModal({ project, onClose }) {
   );
 }
 
-function Projects({ data }) {
-  const [open, setOpen] = React.useState(null);
+export default function Projects({ data }) {
+  const [open, setOpen] = useState(null);
   const layouts = [
     { gridColumn: "span 7", minHeight: 380 },
     { gridColumn: "span 5", minHeight: 380 },
@@ -366,5 +368,3 @@ function Projects({ data }) {
     </section>
   );
 }
-
-window.Projects = Projects;

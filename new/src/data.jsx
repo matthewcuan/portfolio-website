@@ -132,4 +132,4 @@ const PORTFOLIO = {
   }
 };
 
-window.PORTFOLIO = PORTFOLIO;
+export default PORTFOLIO;

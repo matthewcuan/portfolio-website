@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 // Tweaks panel — floating bottom-right. Exposes accent, density, hero variant.
 
 const tweakStyles = {
@@ -107,11 +109,13 @@ function applyDensity(key) {
   document.documentElement.setAttribute("data-density", key);
 }
 
-function Tweaks({ state, setState }) {
-  const [open, setOpen] = React.useState(false);
-  const [available, setAvailable] = React.useState(false);
+export { applyAccent, applyDensity };
 
-  React.useEffect(() => {
+export default function Tweaks({ state, setState }) {
+  const [open, setOpen] = useState(false);
+  const [, setAvailable] = useState(false);
+
+  useEffect(() => {
     const handler = (e) => {
       if (!e.data) return;
       if (e.data.type === "__activate_edit_mode") setOpen(true);
@@ -131,7 +135,7 @@ function Tweaks({ state, setState }) {
     window.parent.postMessage({ type: "__edit_mode_set_keys", edits: patch }, "*");
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     applyAccent(state.accent);
     applyDensity(state.density);
   }, []);
@@ -204,7 +208,3 @@ function Tweaks({ state, setState }) {
     </div>
   );
 }
-
-window.Tweaks = Tweaks;
-window.applyAccent = applyAccent;
-window.applyDensity = applyDensity;

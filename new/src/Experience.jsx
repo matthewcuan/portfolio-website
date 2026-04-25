@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 // Experience timeline — editorial table with hover expand.
 
 const expStyles = {
@@ -141,7 +143,7 @@ const expStyles = {
 };
 
 function ExperienceRow({ item, isOpen, onToggle }) {
-  const [hover, setHover] = React.useState(false);
+  const [hover, setHover] = useState(false);
   return (
     <div
       data-mobile="exp-row"
@@ -186,8 +188,8 @@ function ExperienceRow({ item, isOpen, onToggle }) {
   );
 }
 
-function Experience({ data }) {
-  const [openIdx, setOpenIdx] = React.useState(0);
+export default function Experience({ data }) {
+  const [openIdx, setOpenIdx] = useState(0);
   return (
     <section id="experience" style={expStyles.section} data-screen-label="03 Experience">
       <div className="shell">
@@ -197,7 +199,7 @@ function Experience({ data }) {
             <div style={expStyles.sectionTitle}>Experience</div>
           </div>
           <h2 style={expStyles.heading} data-mobile="section-heading">
-            Building <span style={expStyles.headingItalic}>smart card</span> software, full-stack tools, and systems that make complex workflows reliable.
+            Building <span style={expStyles.headingItalic}>desktop</span> software, backend tools, and systems that make complex workflows reliable.
           </h2>
         </div>
 
@@ -245,5 +247,3 @@ function Experience({ data }) {
     </section>
   );
 }
-
-window.Experience = Experience;

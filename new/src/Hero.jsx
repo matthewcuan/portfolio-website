@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 // Hero section — terminal-editorial hybrid with 3 variants.
 
 const heroStyles = {
@@ -205,9 +207,9 @@ function TopBar({ data, onNav, mobileOpen, setMobileOpen }) {
 }
 
 function TerminalHero({ data }) {
-  const [typed, setTyped] = React.useState("");
+  const [typed, setTyped] = useState("");
   const full = "whoami";
-  React.useEffect(() => {
+  useEffect(() => {
     let i = 0;
     const t = setInterval(() => {
       i++;
@@ -316,8 +318,8 @@ function MarqueeHero({ data }) {
   );
 }
 
-function Hero({ data, variant, onNav }) {
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+export default function Hero({ data, variant, onNav }) {
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
     <section style={heroStyles.wrap} data-screen-label="01 Hero" data-mobile="hero-wrap">
@@ -330,5 +332,3 @@ function Hero({ data, variant, onNav }) {
     </section>
   );
 }
-
-window.Hero = Hero;

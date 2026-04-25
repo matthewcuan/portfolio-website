@@ -1,13 +1,19 @@
-// App entry — composes everything, handles reveal-on-scroll, tweak state.
+import { useEffect, useState } from "react";
+import About from "./About";
+import { Contact, Footer, Writing } from "./Contact";
+import data from "./data";
+import Experience from "./Experience";
+import Hero from "./Hero";
+import Tweaks from "./Tweaks";
 
 function useReveal() {
-  React.useEffect(() => {
+  useEffect(() => {
     const els = document.querySelectorAll(".reveal");
     const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => {
-        if (e.isIntersecting) {
-          e.target.classList.add("in");
-          io.unobserve(e.target);
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in");
+          io.unobserve(entry.target);
         }
       });
     }, { threshold: 0.12 });
@@ -16,16 +22,14 @@ function useReveal() {
   }, []);
 }
 
-function App() {
-  const data = window.PORTFOLIO;
-  const defaults = (() => {
-    try {
-      const raw = document.getElementById("tweak-defaults").textContent;
-      const m = raw.match(/\{[\s\S]*\}/);
-      return JSON.parse(m[0]);
-    } catch { return { accent: "green", density: "default", heroVariant: "terminal" }; }
-  })();
-  const [tweakState, setTweakState] = React.useState(defaults);
+const defaults = {
+  accent: "green",
+  density: "compact",
+  heroVariant: "terminal",
+};
+
+export default function App() {
+  const [tweakState, setTweakState] = useState(defaults);
 
   useReveal();
 
@@ -44,16 +48,13 @@ function App() {
 
   return (
     <>
-      <window.Hero data={data} variant={tweakState.heroVariant} onNav={onNav} />
-      <div className="reveal"><window.About data={data} /></div>
-      <div className="reveal"><window.Experience data={data} /></div>
-      {/* <div className="reveal"><window.Projects data={data} /></div> */}
-      {data.writing.length > 0 && <div className="reveal"><window.Writing data={data} /></div>}
-      <div className="reveal"><window.Contact data={data} /></div>
-      <window.Footer data={data} />
-      <window.Tweaks state={tweakState} setState={setTweakState} />
+      <Hero data={data} variant={tweakState.heroVariant} onNav={onNav} />
+      <div className="reveal"><About data={data} /></div>
+      <div className="reveal"><Experience data={data} /></div>
+      {data.writing.length > 0 && <div className="reveal"><Writing data={data} /></div>}
+      <div className="reveal"><Contact data={data} /></div>
+      <Footer data={data} />
+      <Tweaks state={tweakState} setState={setTweakState} />
     </>
   );
 }
-
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);

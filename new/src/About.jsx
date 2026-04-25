@@ -74,7 +74,7 @@ const aboutStyles = {
   },
 };
 
-function About({ data }) {
+export default function About({ data }) {
   const stackEntries = Object.entries(data.stack);
   return (
     <section id="about" style={aboutStyles.section} data-screen-label="02 About">
@@ -125,5 +125,3 @@ function About({ data }) {
     </section>
   );
 }
-
-window.About = About;

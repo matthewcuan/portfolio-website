@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 // Writing + Contact + Footer
 
 const contactStyles = {
@@ -141,7 +143,7 @@ const contactStyles = {
   },
 };
 
-function Writing({ data }) {
+export function Writing({ data }) {
   return (
     <section id="writing" style={contactStyles.writingSection} data-screen-label="05 Writing">
       <div className="shell">
@@ -166,7 +168,7 @@ function Writing({ data }) {
 }
 
 function WritingRow({ item }) {
-  const [hover, setHover] = React.useState(false);
+  const [hover, setHover] = useState(false);
   return (
     <div
       style={{
@@ -188,7 +190,7 @@ function WritingRow({ item }) {
 }
 
 function LinkChip({ children, href }) {
-  const [hover, setHover] = React.useState(false);
+  const [hover, setHover] = useState(false);
   return (
     <a
       href={href}
@@ -210,7 +212,7 @@ function LinkChip({ children, href }) {
   );
 }
 
-function Contact({ data }) {
+export function Contact({ data }) {
   return (
     <section id="contact" style={contactStyles.contactSection} data-screen-label="06 Contact">
       <div className="shell">
@@ -233,7 +235,7 @@ function Contact({ data }) {
   );
 }
 
-function Footer({ data }) {
+export function Footer({ data }) {
   return (
     <footer style={contactStyles.footer} data-screen-label="07 Footer">
       <div className="shell" data-mobile="footer-inner" style={{
@@ -255,7 +257,3 @@ function Footer({ data }) {
     </footer>
   );
 }
-
-window.Writing = Writing;
-window.Contact = Contact;
-window.Footer = Footer;
