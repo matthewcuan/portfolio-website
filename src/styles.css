@@ -15,10 +15,10 @@
     --sans: "Geist", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
     --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
     --pad-x: clamp(24px, 6vw, 96px);
-    --row-gap: 120px;
+    --row-gap: 160px;
   }
-  [data-density="compact"] { --row-gap: 80px; }
-  [data-density="spacious"] { --row-gap: 180px; }
+  [data-density="compact"] { --row-gap: 100px; }
+  [data-density="spacious"] { --row-gap: 220px; }
 
   * { box-sizing: border-box; }
   html, body { background: var(--bg); color: var(--fg); }

@@ -189,7 +189,7 @@ function ExperienceRow({ item, isOpen, onToggle }) {
 }
 
 export default function Experience({ data }) {
-  const [openIdx, setOpenIdx] = useState(0);
+  const [openIdxs, setOpenIdxs] = useState(new Set([0, 1]));
   return (
     <section id="experience" style={expStyles.section} data-screen-label="03 Experience">
       <div className="shell">
@@ -199,7 +199,7 @@ export default function Experience({ data }) {
             <div style={expStyles.sectionTitle}>Experience</div>
           </div>
           <h2 style={expStyles.heading} data-mobile="section-heading">
-            Building <span style={expStyles.headingItalic}>desktop</span> software, backend tools, and systems that make complex workflows reliable.
+            Building <span style={expStyles.headingItalic}>reliable</span> backend tools, security systems, and software that makes complex workflows simple.
           </h2>
         </div>
 
@@ -208,13 +208,17 @@ export default function Experience({ data }) {
             <ExperienceRow
               key={i}
               item={item}
-              isOpen={openIdx === i}
-              onToggle={() => setOpenIdx(openIdx === i ? -1 : i)}
+              isOpen={openIdxs.has(i)}
+              onToggle={() => setOpenIdxs(prev => {
+                const next = new Set(prev);
+                next.has(i) ? next.delete(i) : next.add(i);
+                return next;
+              })}
             />
           ))}
         </div>
 
-        <div style={expStyles.headerGrid} data-mobile="section-grid">
+        <div style={{ ...expStyles.headerGrid, marginTop: "var(--row-gap)" }} data-mobile="section-grid">
           <div>
             <div style={expStyles.sectionNum}>§ 03</div>
             <div style={expStyles.sectionTitle}>Education</div>

@@ -4,11 +4,11 @@ const PORTFOLIO = {
   name: "Matthew Cuan",
   role: "Lead Software Engineer",
   location: "United States",
-  status: "OMSCS student • Secret clearance",
+  status: "UC Berkeley alum • OMSCS student • Secret clearance",
   tagline: "Lead software engineer building reliable systems and tools.",
   bio: [
-    "I build reliable software across desktop systems, backend services, and internal tooling.",
-    "I'm in Georgia Tech's OMSCS program, hold Security+, and work with AI-assisted development tools."
+    "I build reliable software across backend services, security systems, and internal tooling.",
+    "UC Berkeley graduate, currently in Georgia Tech's OMSCS program. I hold Security+ and work with AI-assisted development tools."
   ],
   email: "matthewcuan@gmail.com",
   links: {
@@ -22,10 +22,10 @@ const PORTFOLIO = {
       company: "90meter Inc",
       role: "Lead Software Engineer",
       period: "2025 — Present",
-      summary: "Lead development of Windows middleware and desktop software deployed to 1.5M+ endpoints.",
+      summary: "Lead development of Windows middleware and security software deployed to 1.5M+ endpoints.",
       bullets: [
         "Led development of a PQC-compliant security applet for forward-compatible authentication.",
-        "Lead a team of 3 engineers delivering desktop and security software for clients.",
+        "Lead a team of 3 engineers delivering security software and middleware for clients.",
         "Built a certificate workflow improvement that reduced login friction.",
         "Built a CI/CD pipeline that cut the dev-to-test cycle by about 50%."
       ],
@@ -125,7 +125,7 @@ const PORTFOLIO = {
   writing: [],
 
   stack: {
-    "Languages": ["C#", "C++", "JavaScript", "Python", "SQL"],
+    "Languages": ["Python", "C#", "JavaScript", "TypeScript", "SQL"],
     "Frameworks": [".NET", "WinForms", "React", "nginx"],
     "Tools": ["Jenkins", "AWS", "Codex", "Claude Code", "GitHub Copilot"],
     "Credentials": ["CompTIA Security+", "US Secret Security Clearance"]

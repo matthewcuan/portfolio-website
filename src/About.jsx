@@ -46,10 +46,11 @@ const aboutStyles = {
     borderTop: "1px solid var(--line)",
   },
   stackCol: {
-    padding: "32px 24px 32px 0",
+    padding: "32px 24px",
     borderRight: "1px solid var(--line)",
   },
-  stackColLast: { borderRight: "none" },
+  stackColFirst: { paddingLeft: 0 },
+  stackColLast: { borderRight: "none", paddingRight: 0 },
   stackLabel: {
     fontFamily: "var(--mono)",
     fontSize: 11,
@@ -108,6 +109,7 @@ export default function About({ data }) {
               data-mobile="stack-col"
               style={{
                 ...aboutStyles.stackCol,
+                ...(idx === 0 ? aboutStyles.stackColFirst : {}),
                 ...(idx === stackEntries.length - 1 ? aboutStyles.stackColLast : {}),
               }}
             >
