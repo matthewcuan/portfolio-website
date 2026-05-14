@@ -4,6 +4,7 @@ import { Contact, Footer, Writing } from "./Contact";
 import data from "./data";
 import Experience from "./Experience";
 import Hero from "./Hero";
+import Projects from "./Projects";
 import Tweaks from "./Tweaks";
 
 function useReveal() {
@@ -51,6 +52,7 @@ export default function App() {
       <Hero data={data} variant={tweakState.heroVariant} onNav={onNav} />
       <div className="reveal"><About data={data} /></div>
       <div className="reveal"><Experience data={data} /></div>
+      <div className="reveal"><Projects data={data} /></div>
       {data.writing.length > 0 && <div className="reveal"><Writing data={data} /></div>}
       <div className="reveal"><Contact data={data} /></div>
       <Footer data={data} />

@@ -149,7 +149,7 @@ export function Writing({ data }) {
       <div className="shell">
         <div style={contactStyles.headerGrid} data-mobile="section-grid">
           <div>
-            <div style={contactStyles.sectionNum}>§ 04</div>
+            <div style={contactStyles.sectionNum}>§ 05</div>
             <div style={contactStyles.sectionTitle}>Writing</div>
           </div>
           <h2 style={contactStyles.heading} data-mobile="section-heading">
@@ -216,7 +216,7 @@ export function Contact({ data }) {
   return (
     <section id="contact" style={contactStyles.contactSection} data-screen-label="06 Contact">
       <div className="shell">
-        <div style={contactStyles.sectionNum}>§ 05 · Contact</div>
+        <div style={contactStyles.sectionNum}>§ 06 · Contact</div>
         <h2 style={contactStyles.contactHuge} data-mobile="contact-huge">
           Let's <span style={contactStyles.contactItalic}>build</span><br/>
           something.

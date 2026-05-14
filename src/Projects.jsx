@@ -334,21 +334,18 @@ function ProjectModal({ project, onClose }) {
 export default function Projects({ data }) {
   const [open, setOpen] = useState(null);
   const layouts = [
-    { gridColumn: "span 7", minHeight: 380 },
-    { gridColumn: "span 5", minHeight: 380 },
-    { gridColumn: "span 4", minHeight: 300 },
-    { gridColumn: "span 8", minHeight: 300 },
+    { gridColumn: "span 12", minHeight: 380 },
   ];
   return (
     <section id="projects" style={projStyles.section} data-screen-label="04 Projects">
       <div className="shell">
         <div style={projStyles.headerGrid} data-mobile="section-grid">
           <div>
-            <div style={projStyles.sectionNum}>§ 03</div>
+            <div style={projStyles.sectionNum}>§ 04</div>
             <div style={projStyles.sectionTitle}>Selected work</div>
           </div>
           <h2 style={projStyles.heading} data-mobile="section-heading">
-            Selected <span style={projStyles.headingItalic}>projects</span> across full-stack apps, browser tooling, responsive design, and game development.
+            Selected <span style={projStyles.headingItalic}>projects</span> and explorations.
           </h2>
         </div>
 
